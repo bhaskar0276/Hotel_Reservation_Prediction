@@ -4,7 +4,7 @@ from src.logger import logging
 from src.custom_exception import CustomException
 import yaml
 
-def read_yaml_file(file_path: str):
+def read_yaml(file_path: str):
     try:
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"The file {file_path} does not exist.")    
