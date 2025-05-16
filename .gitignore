@@ -22,6 +22,7 @@ var/
 wheels/
 artifacts/
 share/python-wheels/
+mlruns/
 *.egg-info/
 .installed.cfg
 *.egg
