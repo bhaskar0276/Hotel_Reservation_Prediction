@@ -3,6 +3,8 @@ pipeline{
 
     environment {
         VENV_DIR = 'venv'
+        GCP_PROJECT = "wide-approach-459121-g5"
+        GCLOUD_PATH = "/var/jenkins_home/google-cloud-sdk/bin"
     }
 
 
@@ -49,7 +51,7 @@ pipeline{
 
                         docker build -t gcr.io/${GCP_PROJECT}/ml-project:latest .
 
-                        
+
 
                         '''
                     }
